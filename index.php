@@ -17,7 +17,7 @@
       <div class="col-md-12">
         <table class="table table-hover">
           <?php while ($data_content=mysql_fetch_array($query_content)) {
-			  include "inc/content_index.php";
+			      include "inc/content_index.php";
             }
           ?>
         </table>
