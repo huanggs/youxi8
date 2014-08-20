@@ -1,3 +1,4 @@
+<?php include  "inc/conn.php" ?>
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
@@ -10,9 +11,17 @@
 
 <body>
   <div class="container">
+    <?php include  "inc/top.php" ?>
+    <?php include  "inc/nav.php" ?>
     <div class="row">
-      <div class="span8"><h2>游戏吧</h3></div>
-      <div class="span4"><h5>关注游戏圈</h2></div>
+      <div class="col-md-12">
+        <table class="table table-hover">
+          <?php while ($data_content=mysql_fetch_array($query_content)) {
+			  include "inc/content_index.php";
+            }
+          ?>
+        </table>
+      </div>
     </div>
   </div>
 </body>
