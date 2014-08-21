@@ -3,13 +3,13 @@
 		      <td width="10%">
 			  <?php switch ($data_content['category']){
 				    case '赛事':
-					  echo '<button type="button" class="btn btn-danger btn-xs">' . $data_content['category'].'</button>';
+					  echo '<button type="button" class="btn btn-danger btn-xs">'.$data_content['category'].'</button>';
 					  break;
 				    case '测试':
-					  echo '<button type="button" class="btn btn-success btn-xs">' . $data_content['category'].'</button>';
+					  echo '<button type="button" class="btn btn-success btn-xs">'.$data_content['category'].'</button>';
 					  break;
 				    case '展会':
-					  echo '<button type="button" class="btn btn-info btn-xs">' . $data_content['category'].'</button>';
+					  echo '<button type="button" class="btn btn-info btn-xs">'.$data_content['category'].'</button>';
 					  break;
 				  }
 			  ?>
@@ -42,5 +42,5 @@
 		      <td width="5%"><a href="<?=$data_content['link_3']?>"><button type="button" class="btn btn-success btn-xs">链接3</button></a></td>
 		      <td width="5%"><a href="<?=$data_content['link_4']?>"><button type="button" class="btn btn-success btn-xs">链接4</button></a></td>
 		      <td width="5%"><a href="<?=$data_content['link_5']?>"><button type="button" class="btn btn-success btn-xs">链接5</button></a></td>
-		      <td width="5%"><img src="http://localhost/youxi8/images/reminder.png" width="63" height="24"></td>
+		      <td width="5%"><img src="images/reminder.png" width="63" height="24"></td>
           </tr>
