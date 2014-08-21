@@ -14,7 +14,7 @@
 				  }
 			  ?>
 			  </td>
-		      <td width="50%" align="center"><?=$data_content['title']?></td>
+		      <td width="45%" align="center"><?=$data_content['title']?></td>
 		    <!--
             <td><?=$data_content['description']?></td>
             -->
@@ -42,4 +42,5 @@
 		      <td width="5%"><a href="<?=$data_content['link_3']?>"><button type="button" class="btn btn-success btn-xs">链接3</button></a></td>
 		      <td width="5%"><a href="<?=$data_content['link_4']?>"><button type="button" class="btn btn-success btn-xs">链接4</button></a></td>
 		      <td width="5%"><a href="<?=$data_content['link_5']?>"><button type="button" class="btn btn-success btn-xs">链接5</button></a></td>
+		      <td width="5%"><img src="http://localhost/youxi8/images/reminder.png" width="63" height="24"></td>
           </tr>
