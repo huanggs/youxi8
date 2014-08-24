@@ -25,7 +25,7 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">日期</label>
             <div class="col-sm-3">
-              <input type="date" class="form-control" name="CreateDate"></input>
+              <input type="date" class="form-control" name="EventDay"></input>
             </div>
           </div>
           <div class="form-group">
@@ -35,6 +35,9 @@
                 <option value="测试">测试</option>
                 <option value="展会">展会</option>
                 <option value="赛事">赛事</option>
+                <option value="赛事">英雄联盟2014S4全球总决赛</option>
+                <option value="赛事">英雄联盟职业联赛</option>
+                <option value="赛事">英雄联盟高校联赛</option>
               </select>
             </div>
           </div>

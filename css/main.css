@@ -1,5 +1,5 @@
 * {
-	font-family:'微软雅黑';	
+	font-family:'微软雅黑';
 }
 
 body {
@@ -25,4 +25,17 @@ body {
 	float: right;
 	font-size: 12px;
 	line-height: 40px;
+}
+
+.DayTitle {
+	padding: 5px 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#d8d8d8));
+}
+
+.content {
+	border-right: 1px #d8d8d8 solid;
+	border-left: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
 }
