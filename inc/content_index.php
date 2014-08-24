@@ -1,5 +1,5 @@
 		    <tr>
-              <td width="10%"><button type="button" class="btn btn-xs"><?=$data_content['date']?></button></td>
+              <td width="10%"><button type="button" class="btn btn-xs"><?=$data_content['CreateDate']?></button></td>
 		      <td width="10%">
 			  <?php switch ($data_content['category']){
 				    case '赛事':

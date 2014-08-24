@@ -10,8 +10,8 @@
 </head>
 
 <body>
+  <?php include "../inc/top2.php" ?>
   <div class="container">
-    <?php include  "../inc/top.php" ?>
     <?php include  "../inc/nav2.php" ?>
     <div class="row">
       <div class="col-md-12">
@@ -25,7 +25,7 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">日期</label>
             <div class="col-sm-3">
-              <input type="date" class="form-control" name="date"></input>
+              <input type="date" class="form-control" name="CreateDate"></input>
             </div>
           </div>
           <div class="form-group">
