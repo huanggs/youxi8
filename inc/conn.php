@@ -7,8 +7,6 @@
   mysql_select_db("youxi8",$con);
   $query_content=mysql_query("SELECT * FROM content ORDER BY EventDay");
   $today = date('Y-m-d',strtotime('today'));
-  $yesterday = date('Y-m-d',strtotime('today -1day'));
-  $byday = date('Y-m-d',strtotime('today -2day'));
   $today_1 = date('Y-m-d',strtotime('today +1day'));
   $today_2 = date('Y-m-d',strtotime('today +2day'));
   $today_3 = date('Y-m-d',strtotime('today +3day'));
@@ -18,5 +16,6 @@
   $today_7 = date('Y-m-d',strtotime('today +7day'));
   $today_8 = date('Y-m-d',strtotime('today +8day'));
   $today_9 = date('Y-m-d',strtotime('today +9day'));
+  $today_q1 = date('Y-m-d',strtotime('today -1day'));
   $weekarray=array("日","一","二","三","四","五","六");
 ?>
