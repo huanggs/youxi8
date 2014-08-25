@@ -29,6 +29,18 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="col-sm-1 control-label">时间</label>
+            <div class="col-sm-3">
+              <input type="time" class="form-control" name="EventTime"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-1 control-label">地点</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" name="EventPlace"></input>
+            </div>
+          </div>
+          <div class="form-group">
             <label class="col-sm-1 control-label">分类</label>
             <div class="col-sm-3">
               <select class="form-control" name="category">
@@ -60,7 +72,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-1 control-label">链接1</label>
+            <label class="col-sm-1 control-label">官网</label>
             <div class="col-sm-11">
               <input type="text" class="form-control" name="link_1"></input>
             </div>

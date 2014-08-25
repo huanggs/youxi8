@@ -101,7 +101,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_6";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")+6];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")-1];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
