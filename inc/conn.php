@@ -1,5 +1,5 @@
 <?php
-  $con=mysql_connect("localhost","root","root");
+  $con=mysql_connect("huanggs.com:33060","root","root");
   mysql_query("set names 'utf8'");
   if (!$con){
     die('数据库连接失败'.mysql_error());
