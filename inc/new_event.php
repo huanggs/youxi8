@@ -8,6 +8,6 @@
     die('Error: ' . mysql_error());
   }
   else {
-    header('Location: ../admin/create.php');
+    header('Location: ../admin/event.php');
   }
 ?>

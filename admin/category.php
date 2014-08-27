@@ -14,19 +14,30 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">分类名称</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="title"></input>
+              <input type="text" class="form-control" name="CatgName"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-1 control-label">分类级别</label>
+            <div class="col-sm-3">
+              <select class="form-control" name="CatgLv">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-1 control-label">父级分类</label>
             <div class="col-sm-3">
-              <select class="form-control" name="category">
-                <option value="测试">测试</option>
-                <option value="展会">展会</option>
-                <option value="赛事">赛事</option>
-                <option value="赛事">英雄联盟2014S4全球总决赛</option>
-                <option value="赛事">英雄联盟职业联赛</option>
-                <option value="赛事">英雄联盟高校联赛</option>
+              <select class="form-control" name="CatgFatherId">
+                <option value=""></option>
+                <?php
+                  $qurey_catg=mysql_query("SELECT * FROM category");
+                  while ($data_catg=mysql_fetch_array($qurey_catg)) {
+                    echo "<option value=\"".$data_catg['id']."\">".$data_catg['CatgName']."</option>";
+                  }
+                ?>
               </select>
             </div>
           </div>

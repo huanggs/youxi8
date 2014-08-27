@@ -1,10 +1,13 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-</head>
-
-<body>
-</body>
-</html>
+<?php
+  include "conn.php";
+  $create_catg = "INSERT INTO category
+  (CatgName, CatgLv, CatgFatherId)
+  VALUES
+  ('$_POST[CatgName]', '$_POST[CatgLv]', '$_POST[CatgFatherId]')";
+  if (!mysql_query($create_catg,$con)){
+    die('Error: ' . mysql_error());
+  }
+  else {
+    header('Location: ../admin/category.php');
+  }
+?>
