@@ -1,23 +1,18 @@
 <?php include  "../inc/conn.php" ?>
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8" />
-  <title>首页 - 游戏吧 - 掌握最全游戏信息</title>
-  <mete name="keyword" content="游戏,展会,电竞,测试,直播,英雄联盟,比赛">
-  <mete name="description" content="关注游戏吧，掌握最全游戏信息。游戏吧通过简洁的内容呈现，让玩家可以快速了解游戏行业重大事件，从此不再错过任何精彩游戏。">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/jquery-1.11.1.min.js"></script>
+<head>
+  <title>添加事件 - 游戏吧 - 掌握最全游戏信息</title>
+  <?php include "../inc/head_2.php" ?>
+</head>
 </head>
 
 <body>
-  <?php include "../inc/top2.php" ?>
   <div class="container">
-    <?php include  "../inc/nav2.php" ?>
+    <?php include "../inc/top_admin.php" ?>
     <div class="row">
       <div class="col-md-12">
-        <form role="form" class="form-horizontal" method="post" action="../inc/create_ctn.php">
+        <form role="form" class="form-horizontal" method="post" action="../inc/new_event.php">
           <div class="form-group">
             <label class="col-sm-1 control-label">标题</label>
             <div class="col-sm-6">
@@ -103,7 +98,9 @@
               <input type="text" class="form-control" name="link_5"></input>
             </div>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <div class="btn_center">
+          <button type="submit" class="btn btn-success btn-block">提交</button>
+          </div>
         </form>
       </div>
     </div>
