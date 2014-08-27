@@ -11,7 +11,7 @@
   <script src="js/jquery-1.11.1.min.js"></script>
 </head>
 
-<!-- Design by Bootstrap; Refect by Ghost; Code by Ghost;-->
+<!-- 设计：Bootstrap; 重构：Ghost; 开发：by Ghost;-->
 
 <body>
   <?php include "inc/top.php" ?>
