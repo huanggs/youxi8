@@ -15,7 +15,7 @@
       <div class="col-md-12">
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -29,7 +29,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_1";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")+1];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_1_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -43,7 +43,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_2";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")+2];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_2_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -57,7 +57,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_3";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")+3];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_3_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -71,7 +71,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_4";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")-3];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_4_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -85,7 +85,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_5";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")-2];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_5_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -99,7 +99,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_6";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")-1];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_6_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -113,7 +113,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_7";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_7_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -127,7 +127,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_8";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")+1];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_8_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
@@ -141,7 +141,7 @@
         
         <div class="DayTitle">
           <span class="DayTitleDate"><?php echo "$today_9";?></span>
-          <span class="DayTitleWeek"><?php echo "星期".$weekarray[date("w")+2];?></span>
+          <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_9_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
           <?php
