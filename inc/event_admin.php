@@ -1,4 +1,5 @@
             <tr>
+              <td width="5%" align="center"><?=$data_content['id']?></td>
               <td width="10%" align="center"><?=$data_content['EventDay']?></td>
               <td width="5%" align="center"><?=date("H:i", strtotime($data_content['EventTime']))?></td>
               <td width="15%" align="center">
@@ -39,5 +40,5 @@
               <td width="5%" align="center"><a href="<?=$data_content['link_3']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
               <td width="5%" align="center"><a href="<?=$data_content['link_4']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
               <td width="5%" align="center"><a href="<?=$data_content['link_5']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-              <td width="10%" align="center"><a href="edit_event.php?id=<?=$data_content['id']?>">编辑</a></td>
+              <td width="5%" align="center"><a href="edit_event.php?id=<?=$data_content['id']?>">编辑</a></td>
             </tr>

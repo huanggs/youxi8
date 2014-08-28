@@ -16,11 +16,11 @@
     ?>
     <div class="row">
       <div class="col-md-12">
-        <form role="form" class="form-horizontal" method="post" action="../inc/new_event.php">
+        <form role="form" class="form-horizontal" method="post" action="../inc/edit_event.php">
           <div class="form-group">
             <label class="col-sm-1 control-label">id</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="title" disabled="true" value="<?=$row['id']?>"></input>
+              <input type="text" class="form-control" name="id" disabled="true" value="<?=$row['id']?>"></input>
             </div>
           </div>
           <div class="form-group">

@@ -18,6 +18,7 @@
           <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
+          <tr><td align="center">时间</td><td align="center">分类</td><td align="center">名称</td><td align="center">重要度</td><td align="center">地点</td><td align="center" colspan="5">链接</td><td align="center">提醒</td></tr>
           <?php
             $category = @$_GET['category'];
             $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today' ORDER BY EventDay, EventTime");

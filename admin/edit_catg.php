@@ -11,10 +11,18 @@
       $CatgId=@$_GET["id"];
       $QureyCatg=mysql_query("SELECT * FROM category WHERE id=$CatgId");
       $RowCatg=mysql_fetch_array($QureyCatg);
+      $QureyCatg2=mysql_query("SELECT * FROM category WHERE id=$RowCatg[CatgFatherId]");
+      $RowCatg2=mysql_fetch_array($QureyCatg2);
     ?>
     <div class="row">
       <div class="col-md-12">
-        <form role="form" class="form-horizontal" method="post" action="../inc/new_category.php">
+        <form role="form" class="form-horizontal" method="post" action="../inc/edit_category.php">
+          <div class="form-group">
+            <label class="col-sm-1 control-label">id</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" name="id" disabled="true" value="<?=$RowCatg[id]?>"></input>
+            </div>
+          </div>
           <div class="form-group">
             <label class="col-sm-1 control-label">分类名称</label>
             <div class="col-sm-6">
@@ -36,11 +44,11 @@
             <label class="col-sm-1 control-label">父级分类</label>
             <div class="col-sm-3">
               <select class="form-control" name="CatgFatherId">
-                <option value="<?=$RowCatg[CatgLv]?>"><?=$RowCatg[CatgFatherId]?></option>
+                <option value="<?=$RowCatg2[id]?>"><?=$RowCatg2[CatgName]?></option>
                 <?php
-                  $qurey_catg=mysql_query("SELECT * FROM category");
-                  while ($data_catg=mysql_fetch_array($qurey_catg)) {
-                    echo "<option value=\"".$data_catg['id']."\">".$data_catg['CatgName']."</option>";
+                  $QureyCatg=mysql_query("SELECT * FROM category");
+                  while ($RowCatg=mysql_fetch_array($QureyCatg)) {
+                    echo "<option value=\"".$RowCatg[id]."\">".$RowCatg[CatgName]."</option>";
                   }
                 ?>
               </select>
