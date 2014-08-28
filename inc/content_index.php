@@ -58,14 +58,14 @@
                <td width="5%" align="center"><a href="<?=$data_content['link_5']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
                <td width="10%" align="center">
                 <script type="text/javascript">
-                var __qqClockShare = {
-                   content: "【游戏吧】提醒您：<?=$data_content['title']?>即将开始。",
-                   time: "<?=$data_content['EventDay']?> <?=date("H:i", strtotime($data_content['EventTime']))?>",
-                   advance: 5,
-                   url: "<?=$data_content['OfficialSite']?>",
-                   icon: "2_1"
-                };
-                document.write('<a href="http://qzs.qq.com/snsapp/app/bee/widget/open.htm#content=' + encodeURIComponent(__qqClockShare.content) +'&time=' + encodeURIComponent(__qqClockShare.time) +'&advance=' + __qqClockShare.advance +'&url=' + encodeURIComponent(__qqClockShare.url) + '" target="_blank"><img src="http://i.gtimg.cn/snsapp/app/bee/widget/img/' + __qqClockShare.icon + '.png" style="border:0px;"/></a>');
+                  var __qqClockShare = {
+                     content: "【游戏吧】提醒您：<?=$data_content['title']?>即将开始。",
+                     time: "<?=$data_content['EventDay']?> <?=date("H:i", strtotime($data_content['EventTime']))?>",
+                     advance: 5,
+                     url: "<?=$data_content['OfficialSite']?>",
+                     icon: "2_1"
+                  };
+                  document.write('<a href="http://qzs.qq.com/snsapp/app/bee/widget/open.htm#content=' + encodeURIComponent(__qqClockShare.content) +'&time=' + encodeURIComponent(__qqClockShare.time) +'&advance=' + __qqClockShare.advance +'&url=' + encodeURIComponent(__qqClockShare.url) + '" target="_blank"><img src="http://i.gtimg.cn/snsapp/app/bee/widget/img/' + __qqClockShare.icon + '.png" style="border:0px;"/></a>');
                 </script>
                </td>
             </tr>
