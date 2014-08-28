@@ -20,9 +20,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today' ORDER BY EventDay, EventTime");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today' ORDER BY EventDay, EventTime");
             while ($data_content=mysql_fetch_array($query_content2)) {
-			      include "inc/content_index.php";
+			      include "inc/event_index.php";
             }
           ?>
         </table>
@@ -34,9 +34,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_1' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_1' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
-            include "inc/content_index.php";
+            include "inc/event_index.php";
             }
           ?>
         </table>
@@ -48,9 +48,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_2' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_2' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
-            include "inc/content_index.php";
+            include "inc/event_index.php";
             }
           ?>
         </table>
@@ -62,9 +62,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_3' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_3' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
-            include "inc/content_index.php";
+            include "inc/event_index.php";
             }
           ?>
         </table>
@@ -76,9 +76,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_4' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_4' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
-            include "inc/content_index.php";
+            include "inc/event_index.php";
             }
           ?>
         </table>
@@ -90,9 +90,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_5' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_5' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
-            include "inc/content_index.php";
+            include "inc/event_index.php";
             }
           ?>
         </table>
@@ -104,9 +104,9 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_6' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_6' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
-            include "inc/content_index.php";
+            include "inc/event_index.php";
             }
           ?>
         </table>
@@ -118,7 +118,7 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_7' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_7' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
             include "inc/content_index.php";
             }
@@ -132,7 +132,7 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_8' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_8' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
             include "inc/content_index.php";
             }
@@ -146,12 +146,15 @@
         <table class="table table-hover table-condensed content">
           <?php
             $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM content WHERE category like '%$category%' and EventDay like '$today_9' ORDER BY EventDay");
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today_9' ORDER BY EventDay");
             while ($data_content=mysql_fetch_array($query_content2)) {
             include "inc/content_index.php";
             }
           ?>
         </table>
+      </div>
+      <div class="col-md-12">
+        footer
       </div>
     </div>
   </div>

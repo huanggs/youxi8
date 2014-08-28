@@ -9,14 +9,14 @@
 
 <body>
   <div class="container">
-    <?php include "../inc/top_admin.php" ?>
+    <?php include "../inc/top_admin.php";?>
     <div class="row">
       <div class="col-md-12">
         <form role="form" class="form-horizontal" method="post" action="../inc/new_event.php">
           <div class="form-group">
             <label class="col-sm-1 control-label">标题</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="title"></input>
+              <input type="text" class="form-control" name="title" value="<?=$row['title']?>"></input>
             </div>
           </div>
           <div class="form-group">

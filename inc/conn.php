@@ -5,7 +5,7 @@
     die('数据库连接失败'.mysql_error());
   }
   mysql_select_db("youxi8",$con);
-  $query_content=mysql_query("SELECT * FROM content ORDER BY EventDay");
+  $query_content=mysql_query("SELECT * FROM event ORDER BY EventDay");
   $today = date('Y-m-d',strtotime('today'));
   $today_1 = date('Y-m-d',strtotime('today +1day'));
   $today_2 = date('Y-m-d',strtotime('today +2day'));
