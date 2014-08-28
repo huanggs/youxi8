@@ -71,7 +71,7 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">官网</label>
             <div class="col-sm-11">
-              <input type="text" class="form-control" name="link_1"></input>
+              <input type="text" class="form-control" name="OfficialSite"></input>
             </div>
           </div>
           <div class="form-group">
