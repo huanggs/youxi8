@@ -20,20 +20,20 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">id</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="id" disabled="true" value="<?=$RowCatg[id]?>"></input>
+              <input type="text" class="form-control" name="id" readonly="readonly" value="<?=$RowCatg[id]?>"></input>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-1 control-label">分类名称</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="CatgName" value="<?=$RowCatg[CatgName]?>"></input>
+              <input type="text" class="form-control" name="CatgName" value="<?=$RowCatg['CatgName']?>"></input>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-1 control-label">分类级别</label>
             <div class="col-sm-3">
               <select class="form-control" name="CatgLv">
-                <option value="<?=$RowCatg[CatgLv]?>"><?=$RowCatg[CatgLv]?></option>
+                <option value="<?=$RowCatg['CatgLv']?>"><?=$RowCatg['CatgLv']?></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -44,11 +44,11 @@
             <label class="col-sm-1 control-label">父级分类</label>
             <div class="col-sm-3">
               <select class="form-control" name="CatgFatherId">
-                <option value="<?=$RowCatg2[id]?>"><?=$RowCatg2[CatgName]?></option>
+                <option value="<?=$RowCatg2['id']?>"><?=$RowCatg2['CatgName']?></option>
                 <?php
                   $QureyCatg=mysql_query("SELECT * FROM category");
                   while ($RowCatg=mysql_fetch_array($QureyCatg)) {
-                    echo "<option value=\"".$RowCatg[id]."\">".$RowCatg[CatgName]."</option>";
+                    echo "<option value=\"".$RowCatg['id']."\">".$RowCatg['CatgName']."</option>";
                   }
                 ?>
               </select>
