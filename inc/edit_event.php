@@ -2,10 +2,10 @@
   include "conn.php";
   $EditEvent = "UPDATE event SET
   category=$_POST[category],
-  importance=$_POST[importance], 
-  EventDay=$_POST[EventDay], 
-  EventTime=$_POST[EventTime], 
-  EventPlace='$_POST[EventPlace]', 
+  importance=$_POST[importance],
+  EventDay='$_POST[EventDay]',
+  EventTime='$_POST[EventTime]',
+  EventPlace='$_POST[EventPlace]',
   title='$_POST[title]', 
   description='$_POST[description]', 
   OfficialSite='$_POST[OfficialSite]', 

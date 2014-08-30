@@ -1,7 +1,9 @@
             <tbody>
             <tr>
-              <td width="10%" align="center"><?=$RowCatg['id']?></td>
-              <td width="30%" align="left">
+              <td width="10%" align="center"><?=$RowCatg[id]?></td>
+              <td width="10%" align="center"><?=$RowCatg[CatgLv]?></td>
+              <td width="10%" align="center"><?=$RowCatg[CatgFatherId]?></td>
+              <td width="65%" align="left">
                 <?php
                   switch ($RowCatg[CatgLv]) {
                     case '1':
@@ -16,8 +18,6 @@
                   }
                 ?>
               </td>
-              <td width="10%" align="center"><?=$RowCatg[CatgLv]?></td>
-              <td width="10%" align="center"><?=$RowCatg[CatgFatherId]?></td>
-              <td width="10%" align="center"><a href="edit_catg.php?id=<?=$RowCatg[id]?>">编辑</a></td>
+              <td width="5%" align="center"><a href="edit_catg.php?id=<?=$RowCatg[id]?>"><button type="button" class="btn btn-success btn-xs">编辑</button></a></td>
             </tr>
             </tbody>

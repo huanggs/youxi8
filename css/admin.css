@@ -1,3 +1,8 @@
+.thead {
+	background: #efefef;
+	font-weight: bolder;
+}
+
 .CatgLv1 {
 	margin-left: 0;
 }
