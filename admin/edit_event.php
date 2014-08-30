@@ -1,7 +1,7 @@
 <?php include  "../inc/conn.php" ?>
 <!DOCTYPE html>
 <head>
-  <title>添加事件 - 游戏吧 - 掌握最全游戏信息</title>
+  <title>修改事件 - 游戏吧 - 掌握最全游戏信息</title>
   <?php include "../inc/head_2.php" ?>
 </head>
 

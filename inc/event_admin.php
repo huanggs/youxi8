@@ -1,4 +1,10 @@
-            <tr>
+              <?php
+                if ($ArrayEvent[Visible]==0){
+                  echo '<tr class="Visible">';
+                } else {
+                  echo '<tr>';
+                }
+              ?>
               <td width="2%" align="center"><?=$ArrayEvent[id]?></td>
               <td width="8%" align="center"><?=$ArrayEvent[EventDay]?></td>
               <td width="3%" align="center"><?=date("H:i", strtotime($ArrayEvent[EventTime]))?></td>
@@ -43,11 +49,10 @@
               <td width="3%" align="center"><a href="edit_event.php?id=<?=$ArrayEvent[id]?>"><button type="button" class="btn btn-success btn-xs">编辑</button></a></td>
               <td width="3%" align="center">
                 <?php
-                if ($ArrayEvent[Visible]=1){
-                  echo "<a href=\"../inc/invisible_event.php?id=".$ArrayEvent[id]."\"><button type=\"button\" class=\"btn btn-danger btn-xs\">关闭</button></a>";
-                }
-                else {
-                  echo "<button type=\"button\" class=\"btn btn-default btn-xs\">已关闭</button>";
+                if ($ArrayEvent[Visible]==1){
+                  echo '<a href="../inc/invisible_event.php?id='.$ArrayEvent[id].'"><button type="button" class="btn btn-danger btn-xs">关闭</button></a>';
+                } elseif ($ArrayEvent[Visible]==0){
+                  echo '<button type="button" class="btn btn-default btn-xs" disabled="ture">已关闭</button>';
                 }
                 ?>
               </td>

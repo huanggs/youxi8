@@ -1,6 +1,11 @@
 .thead {
-	background: #efefef;
+	background: #bfbfbf;
 	font-weight: bolder;
+}
+
+.Visible{
+	background: #f2f2f2;
+	color: #7f7f7f;
 }
 
 .CatgLv1 {
