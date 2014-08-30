@@ -1,0 +1,15 @@
+.CatgLv1 {
+	margin-left: 0;
+}
+
+.CatgLv2 {
+	margin-left: 20px;
+	padding-left: 10px;
+	border-left: 2px solid #dedede;
+}
+
+.CatgLv3 {
+	margin-left: 40px;
+	padding-left: 10px;
+	border-left: 2px solid #dedede;
+}
