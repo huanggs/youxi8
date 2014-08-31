@@ -12,7 +12,8 @@
   link_2='$_POST[link_2]', 
   link_3='$_POST[link_3]', 
   link_4='$_POST[link_4]', 
-  link_5='$_POST[link_5]'
+  link_5='$_POST[link_5]',
+  Visible=$_POST[Visible]
   WHERE id=$_POST[id]";
   if (!mysql_query($EditEvent,$con)){
     die('Error: ' . mysql_error());

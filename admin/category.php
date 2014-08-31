@@ -7,9 +7,9 @@
 
 <body>
   <div class="container">
-    <?php include "../inc/top_admin.php" ?>
     <div class="row">
       <div class="col-md-12">
+        <?php include "../inc/top_admin.php" ?>
         <table class="table table-hover table-condensed content">
         <tr class="thead"><td align="center">id</td><td align="center">层级</td><td align="center">父级分类</td><td align="center">名称</td><td align="center">操作</td></tr>
         <?php

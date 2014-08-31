@@ -7,6 +7,10 @@
 
 <body>
   <div class="container">
-    <?php include "../inc/top_admin.php" ?>
+    <div class="row">
+      <div class="col-md-12">
+        <?php include "../inc/top_admin.php" ?>
+      </div>
+    </div>
   </div>
 </body>

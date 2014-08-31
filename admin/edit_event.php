@@ -110,6 +110,12 @@
               <input type="text" class="form-control" name="link_5" value="<?=$row[link_5]?>"></input>
             </div>
           </div>
+          <div class="form-group">
+            <label class="col-sm-1 control-label">是否关闭</label>
+            <div class="col-sm-11">
+              <input type="radio" class="form-control" name="Visible" value="0"></input>
+            </div>
+          </div>
           <div class="btn_center">
           <button type="submit" class="btn btn-success btn-block">确认修改</button>
           </div>
