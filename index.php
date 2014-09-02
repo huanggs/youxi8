@@ -78,8 +78,9 @@
         ?>
 
       </div>
-      <div class="col-md-12">
-        footer
+      <div class="col-md-12 footer">
+        <p>Games Information Center</p>
+        <p>Power by 3Team.com</p>
       </div>
     </div>
   </div>
