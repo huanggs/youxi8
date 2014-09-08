@@ -10,14 +10,12 @@
     <div class="row">
       <div class="col-md-12">
         <?php include "../inc/top_admin.php" ?>
-        <table class="table table-hover table-condensed content">
-          <tr class="thead"><td align="center">id</td><td align="center">用户名</td><td align="center">用户组</td><td align="center" colspan="2">操作</td></tr>
-        <?php
-          $QureyUser=mysql_query("SELECT * FROM user");
-          while ($RowUser=mysql_fetch_array($QureyUser)){
-          include "../inc/user_admin.php";
-          }
-        ?>
+        <form method="post" action="inc/new">
+          <label>用户名：</label><input type="text" value=""></input>
+          <label>输入密码：</label><input type="text" value=""></input>
+          <label>确认密码：</label><input type="text" value=""></input>
+          <label>用户组：</label><input type="text" value=""></input>
+        </form>
       </div>
     </div>
   </div>
