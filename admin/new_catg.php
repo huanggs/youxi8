@@ -12,14 +12,14 @@
       <div class="col-md-12">
         <form role="form" class="form-horizontal" method="post" action="../inc/new_category.php">
           <div class="form-group">
-            <label class="col-sm-1 control-label">分类名称</label>
-            <div class="col-sm-6">
+            <label class="col-md-1 control-label">分类名称</label>
+            <div class="col-md-6">
               <input type="text" class="form-control" name="CatgName"></input>
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-1 control-label">分类级别</label>
-            <div class="col-sm-3">
+            <label class="col-md-1 control-label">分类级别</label>
+            <div class="col-md-3">
               <select class="form-control" name="CatgLv">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -28,8 +28,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-1 control-label">父级分类</label>
-            <div class="col-sm-3">
+            <label class="col-md-1 control-label">父级分类</label>
+            <div class="col-md-3">
               <select class="form-control" name="CatgFatherId">
                 <option value=""></option>
                 <?php

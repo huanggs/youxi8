@@ -18,6 +18,6 @@
                   }
                 ?>
               </td>
-              <td width="5%" align="center"><a href="edit_catg.php?id=<?=$RowCatg['id']?>"><button type="button" class="btn btn-success btn-xs">编辑</button></a></td>
+              <td width="5%" align="center"><a href="edit_catg.php?id=<?=$RowCatg['id']?>"><button type="button" class="btn btn-primary btn-xs">编辑</button></a></td>
             </tr>
             </tbody>

@@ -10,14 +10,55 @@
     <div class="row">
       <div class="col-md-12">
         <?php include "../inc/top_admin.php" ?>
-        <table class="table table-hover table-condensed content">
-          <tr class="thead"><td align="center">id</td><td align="center">用户名</td><td align="center">用户组</td><td align="center" colspan="2">操作</td></tr>
         <?php
-          $QureyUser=mysql_query("SELECT * FROM user");
-          while ($RowUser=mysql_fetch_array($QureyUser)){
-          include "../inc/user_admin.php";
-          }
+          $UserID=@$_GET["id"];
+          $DataUser=mysql_fetch_array(mysql_query("SELECT * FROM user WHERE id=$UserID"));
         ?>
+
+        <form role="form" class="form-horizontal" method="post" action="../inc/edit_user.php">
+          <div class="form-group">
+            <label class="col-md-2 control-label">ID：</label>
+            <div class="col-md-6 ">
+              <input class="form-control" type="text" readonly="ture" name="id" value="<?=$DataUser["id"]?>"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-2 control-label">用户名：</label>
+            <div class="col-md-6 ">
+              <input class="form-control" type="text" name="UserName" value="<?=$DataUser["UserName"]?>"></input>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-2 control-label">输入密码：</label>
+            <div class="col-md-6 ">
+              <input class="form-control" type="text" name="UserPwd" value="<?=$DataUser["UserPwd"]?>"></input>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-2 control-label">确认密码：</label>
+            <div class="col-md-6 ">
+              <input class="form-control" type="text" name="UserPwdCfm" value=""></input>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-2 control-label">用户组：</label>
+            <div class="col-md-6 ">
+              <select class="form-control" name="UserGroup">
+                <option value="<?=$DataUser["UserGroup"]?>">当前用户组：<?=$DataUser["UserGroup"]?></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="btn_center">
+          <button type="submit" class="btn btn-success btn-block">提交</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
