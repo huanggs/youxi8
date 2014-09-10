@@ -30,22 +30,22 @@
                      break;
                    }
                  ?></td>
-               <td width="5%" align="center">
+               <td width="10%" align="center">
                  <?php switch ($data_content['importance']){
                    case 1:
-                     echo '<button type="button" class="btn btn-danger btn-xs">万众瞩目</button>';
+                     echo '<span class="ColorRed f-size-12">万众瞩目</span>';
                      break;
                    case 2:
-                     echo '<button type="button" class="btn btn-warning btn-xs">不容错过</button>';
+                     echo '<span class="ColorOrange f-size-12">不容错过</span>';
                      break;
                    case 3:
-                     echo '<button type="button" class="btn btn-info btn-xs">建议关注</button>';
+                     echo '<span class="ColorBlue f-size-12">建议关注</span>';
                      break;
                    case 4:
-                     echo '<button type="button" class="btn btn-success btn-xs">值得一看</button>';
+                     echo '<span class="ColorGreen f-size-12">值得一看</span>';
                      break;
                    case 5:
-                     echo '<button type="button" class="btn btn-primary btn-xs">不妨一看</button>';
+                     echo '<span class="ColorGray f-size-12">不妨一看</span>';
                      break;
                    }
                  ?>

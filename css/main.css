@@ -6,6 +6,16 @@ body {
 	color: #000;
 }
 
+.ColorRed {color: #ff0000;}
+.ColorOrange {color: #ff7200;}
+.ColorBlue {color: #3178d8;}
+.ColorGreen {color: #218c00;}
+.ColorGray {color: #5c5c5c;}
+
+.f-size-12 {font-size: 12px;}
+.f-size-14 {font-size: 14px;}
+.f-size-16 {font-size: 16px;}
+
 .n_top {
 	height: 40px;
 	border-bottom: 1px solid #d2d2d2;
@@ -41,7 +51,7 @@ body {
 }
 
 .NorCtn {
-	color: #6c6c6c;
+	color: #5c5c5c;
 	font-size: 12px;
 }
 
