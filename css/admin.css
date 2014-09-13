@@ -1,25 +1,39 @@
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+ul li {
+	line-height:30px;
+}
+
 .thead {
-	background: #bfbfbf;
-	font-weight: bolder;
+  background: #bfbfbf;
+  font-weight: bolder;
 }
 
 .Visible{
-	background: #f2f2f2;
-	color: #7f7f7f;
+  background: #f2f2f2;
+  color: #7f7f7f;
 }
 
 .CatgLv1 {
-	margin-left: 0;
+  margin-left: 0;
+  font-weight: bolder;
+  font-size:16px;
 }
 
 .CatgLv2 {
-	margin-left: 20px;
-	padding-left: 10px;
-	border-left: 2px solid #dedede;
+  margin-left: 20px;
+  padding-left: 10px;
+  font-size:14px;
+  border-left: 2px solid #dedede;
 }
 
 .CatgLv3 {
-	margin-left: 40px;
-	padding-left: 10px;
-	border-left: 2px solid #dedede;
+  margin-left: 20px;
+  padding-left: 10px;
+  font-size:12px;
+  border-left: 2px solid #dedede;
 }
