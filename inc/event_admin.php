@@ -5,9 +5,9 @@
                   echo '<tr>';
                 }
               ?>
-              <td align="center"><?=$ArrayEvent['id']?></td>
-              <td align="center"><?=$ArrayEvent['EventDay']?></td>
-              <td align="center"><?=date("H:i", strtotime($ArrayEvent['EventTime']))?></td>
+              <td align="center"><?php echo $ArrayEvent['id'];?></td>
+              <td align="center"><?php echo $ArrayEvent['EventDay'];?></td>
+              <td align="center"><?php echo date("H:i", strtotime($ArrayEvent['EventTime']))?></td>
               <td align="center">
                   <span class="NorCtn">
                     <?php
@@ -19,7 +19,7 @@
                     ?>
                  </span>
               </td>
-              <td align="center"><?=$ArrayEvent['title']?></td>
+              <td align="center"><?php echo $ArrayEvent['title'];?></td>
               <td align="center">
                  <?php switch ($ArrayEvent['importance']){
                    case 1:
@@ -40,13 +40,13 @@
                    }
                  ?>
               </td>
-              <td align="center"><span class="NorCtn"><?=$ArrayEvent['EventPlace']?></span></td>
-              <td align="center"><a href="<?=$ArrayEvent['OfficialSite']?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
-              <td align="center"><a href="<?=$ArrayEvent['link_2']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-              <td align="center"><a href="<?=$ArrayEvent['link_3']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-              <td align="center"><a href="<?=$ArrayEvent['link_4']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-              <td align="center"><a href="<?=$ArrayEvent['link_5']?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-              <td align="center"><a href="edit_event.php?id=<?=$ArrayEvent['id']?>"><button type="button" class="btn btn-primary btn-xs">编辑</button></a></td>
+              <td align="center"><span class="NorCtn"><?php echo $ArrayEvent['EventPlace'];?></span></td>
+              <td align="center"><a href="<?php echo $ArrayEvent['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
+              <td align="center"><a href="<?php echo $ArrayEvent['link_2'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
+              <td align="center"><a href="<?php echo $ArrayEvent['link_3'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
+              <td align="center"><a href="<?php echo $ArrayEvent['link_4'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
+              <td align="center"><a href="<?php echo $ArrayEvent['link_5'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
+              <td align="center"><a href="edit_event.php?id=<?php echo $ArrayEvent['id'];?>"><button type="button" class="btn btn-primary btn-xs">编辑</button></a></td>
               <td align="center">
                 <?php
                 if ($ArrayEvent['Visible']==1){

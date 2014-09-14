@@ -19,20 +19,20 @@
           <div class="form-group">
             <label class="col-md-2 control-label">ID：</label>
             <div class="col-md-6 ">
-              <input class="form-control" type="text" readonly="ture" name="id" value="<?=$DataUser["id"]?>"></input>
+              <input class="form-control" type="text" readonly="ture" name="id" value="<?php echo $DataUser["id"];?>"></input>
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-2 control-label">用户名：</label>
             <div class="col-md-6 ">
-              <input class="form-control" type="text" name="UserName" value="<?=$DataUser["UserName"]?>"></input>
+              <input class="form-control" type="text" name="UserName" value="<?php echo $DataUser["UserName"];?>"></input>
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-md-2 control-label">输入密码：</label>
             <div class="col-md-6 ">
-              <input class="form-control" type="text" name="UserPwd" value="<?=$DataUser["UserPwd"]?>"></input>
+              <input class="form-control" type="text" name="UserPwd" value="<?php echo $DataUser["UserPwd"];?>"></input>
             </div>
           </div>
 
@@ -47,7 +47,7 @@
             <label class="col-md-2 control-label">用户组：</label>
             <div class="col-md-6 ">
               <select class="form-control" name="UserGroup">
-                <option value="<?=$DataUser["UserGroup"]?>">当前用户组：<?=$DataUser["UserGroup"]?></option>
+                <option value="<?php echo $DataUser["UserGroup"];?>">当前用户组：<?php echo $DataUser["UserGroup"];?></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

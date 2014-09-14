@@ -1,7 +1,7 @@
 <?php include  "../inc/conn.php" ?>
 <!DOCTYPE html>
 <head>
-  <title>分类管理 - 游戏吧 - 掌握最全游戏信息</title>
+  <title>分类管理 - <?php echo $DataInfo['SiteName'];?> - <?php echo $DataInfo['SiteTitle'];?></title>
   <?php include "../inc/head_2.php" ?>
 </head>
 

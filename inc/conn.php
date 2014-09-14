@@ -6,6 +6,7 @@
   }
   mysql_select_db("youxi8",$con);
   $query_content=mysql_query("SELECT * FROM event ORDER BY EventDay");
+  $DataInfo=mysql_fetch_array(mysql_query("SELECT * FROM info"));
 
   //数量
   $NumEvent=mysql_fetch_array(mysql_query("SELECT count(*) FROM event"));
