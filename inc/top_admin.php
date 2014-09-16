@@ -27,6 +27,6 @@
             </ul>
           </li>
         </ul>
-      <span class="login"><a href="../login.php">登陆</a> <a href="../index.php">前台</a></span>
+      <span class="login"><a href="login.php">登陆</a> <a href="../index.php">前台</a></span>
       </div>
     </nav>

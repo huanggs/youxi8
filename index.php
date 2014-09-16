@@ -13,7 +13,6 @@
     <?php include "inc/nav.php" ?>
     <div class="row">
       <div class="col-md-12">
-
       <?php
         for ($i=0;$i<9;$i++){
           switch ($i) {

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
   <title>修改事件 - 游戏吧 - 掌握最全游戏信息</title>
-  <?php include "../inc/head_2.php" ?>
+  <?php include "../inc/head_admin.php" ?>
 </head>
 
 <body>
