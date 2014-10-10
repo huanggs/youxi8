@@ -1,7 +1,7 @@
 <?php include "../inc/conn.php" ?>
 <!DOCTYPE html>
 <head>
-  <title>管理首页 - 游戏吧 - 掌握最全游戏信息</title>
+  <title>登陆 - <?php echo $DataInfo['SiteName'];?> - <?php echo $DataInfo['SiteTitle'];?></title>
   <?php include "../inc/head_admin.php" ?>
 </head>
 
@@ -23,7 +23,13 @@
             <div class="col-sm-3">
               <input type="password" class="form-control" name="CatgName"></input>
             </div>
-          </div>    
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-3">
+              <button type="submit" class="btn btn-success btn-block">登陆</button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
