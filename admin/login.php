@@ -14,14 +14,14 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">用户名：</label>
             <div class="col-sm-3">
-              <input type="text" class="form-control" name="CatgName"></input>
+              <input type="text" class="form-control" name="UserName"></input>
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-sm-1 control-label">密码：</label>
             <div class="col-sm-3">
-              <input type="password" class="form-control" name="CatgName"></input>
+              <input type="password" class="form-control" name="UserPwd"></input>
             </div>
           </div>
 
