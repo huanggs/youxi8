@@ -27,7 +27,7 @@
 
           <div class="form-group">
             <div class="col-sm-3">
-              <button type="submit" class="btn btn-success btn-block">登陆</button>
+              <input type="submit" class="btn btn-success btn-block" value="登陆">
             </div>
           </div>
         </form>
