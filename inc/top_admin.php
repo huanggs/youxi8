@@ -1,3 +1,11 @@
+<?php
+	include '../inc/conn.php';
+	session_start();
+	if (!isset($_SESSION["cookieee"])) {
+	session_unset();
+	session_destroy();
+}
+?>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 dropdown">
         <ul class="nav navbar-nav">
@@ -27,6 +35,17 @@
             </ul>
           </li>
         </ul>
-      <span class="login"><a href="login.php">登陆</a> <a href="../index.php">首页</a></span>
+      <span class="login">
+	    <?php
+		if(isset($_SESSION['UserName'])):
+		?>
+	        <span style="color:#fff;"><?php echo $_SESSION['UserName'];?> 欢迎您！</span>
+	            <a href="../logout.php">退出</a>
+	    <a href="../index.php">首页</a>
+	    <?php elseif(!isset($_SESSION['UserName'])): ?>
+	    <a href="">非法用户</a>
+	    <a href="../index.php">首页</a>
+	    <?php endif;?>
+      </span>
       </div>
     </nav>

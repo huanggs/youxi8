@@ -1,16 +1,16 @@
-<?php include "../inc/conn.php" ?>
+<?php include "inc/conn.php" ?>
 <!DOCTYPE html>
 <head>
   <title>登陆 - <?php echo $DataInfo['SiteName'];?> - <?php echo $DataInfo['SiteTitle'];?></title>
-  <?php include "../inc/head_admin.php" ?>
+  <?php include "inc/head_admin.php" ?>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <?php include "../inc/top_admin.php" ?>
-        <form method="post" action="../inc/verfy_login.php" class="form-horizontal">
+        <?php include "inc/top_admin.php" ?>
+        <form method="post" action="inc/verfy_login.php" class="form-horizontal">
           <div class="form-group">
             <label class="col-sm-1 control-label">用户名：</label>
             <div class="col-sm-3">
@@ -33,5 +33,4 @@
         </form>
       </div>
     </div>
-  </div>
-</body>
+  </

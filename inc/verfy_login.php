@@ -7,7 +7,7 @@
   $UserData =mysql_fetch_array(mysql_query("SELECT * FROM user WHERE UserName = '$UserName'"));
   $_SESSION['UserName'] = $UserData['UserName'];
   $_SESSION['UserPwd'] = $UserData['UserPwd'];
-  $_SESSION['UserGroup'] = $UserData['UserPwd'];
+  $_SESSION['UserGroup'] = $UserData['UserGroup'];
   
   if	 ($UserPwd == $UserData['UserPwd'] && $UserData['UserGroup'] == 'admin'):
   	header("location:../index.php");

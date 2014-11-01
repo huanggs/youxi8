@@ -22,10 +22,10 @@
 					echo "";
 	            endif;
 			?>
-	            <a href="">退出</a>
+	            <a href="logout.php">退出</a>
 	    <?php elseif(!isset($_SESSION['UserName'])): ?>
 	    <a href=""> 注册</a>
-	    <a href="admin\login.php"> 登陆</a>
+	    <a href="login.php"> 登陆</a>
 	    <?php endif;?>
       </span>
     </div>
