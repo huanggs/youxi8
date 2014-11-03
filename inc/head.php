@@ -1,6 +1,6 @@
   <meta charset="utf-8" />
-  <mete name="keyword" content="<?php echo $DataInfo['SiteKeyword']?>">
-  <mete name="description" content="<?php echo $DataInfo['SiteDescription']?>">
+  <meta name="keyword" content="<?php echo $DataInfo['SiteKeyword']?>">
+  <meta name="description" content="<?php echo $DataInfo['SiteDescription']?>">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/buttons.css">
