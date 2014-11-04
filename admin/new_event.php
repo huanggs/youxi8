@@ -16,7 +16,7 @@
           <div class="form-group">
             <label class="col-sm-1 control-label">标题</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="title" value="<?=$row['title']?>"></input>
+              <input type="text" class="form-control" name="title""></input>
             </div>
           </div>
           <div class="form-group">

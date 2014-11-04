@@ -2,8 +2,9 @@
 	font-family:'微软雅黑';
 }
 
-body {
+body,html {
 	color: #000;
+  	margin-top:-20px;
 }
 
 .ColorRed {color: #ff0000;}
@@ -38,7 +39,7 @@ body {
 }
 
 .DayTitle {
-	padding: 5px 20px;
+	padding: 5px 10px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#d8d8d8));

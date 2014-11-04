@@ -4,13 +4,13 @@
           <td align="center">
             <?php
               switch ($RowUser['UserGroup']){
-              	case 1:
+              	case 'admin':
                 echo "管理员";
                 break;
-                case 2:
+                case 'info':
                 echo "信息录入员";
                 break;
-                case 3:
+                case 'user':
                 echo "普通用户";
                 break;
               }

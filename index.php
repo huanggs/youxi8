@@ -63,10 +63,10 @@
           <span class="DayTitleWeek"><?php echo "星期".$weekarray[$today_w];?></span>
         </div>
         <table class="table table-hover table-condensed content">
-          <tr><td align="center">时间</td><td align="center">分类</td><td align="center">名称</td><td align="center">重要度</td><td align="center">地点</td><td align="center" colspan="5">链接</td><td align="center">提醒</td></tr>
+          <!-- <tr><td align="center">时间</td><td align="center">分类</td><td align="center">名称</td><td align="center">重要度</td><td align="center">地点</td><td align="center" colspan="5">链接</td><td align="center">提醒</td></tr> -->
           <?php
-            $category = @$_GET['category'];
-            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$category%' and EventDay like '$today' and Visible=1 ORDER BY EventTime");
+            $CatgId = @$_GET['CatgId'];
+            $query_content2=mysql_query("SELECT * FROM event WHERE category like '%$CatgId%' and EventDay like '$today' and Visible=1 ORDER BY EventTime");
             while ($data_content=mysql_fetch_array($query_content2)) {
 			      include "inc/event_index.php";
             }

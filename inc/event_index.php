@@ -1,5 +1,5 @@
             <tr>
-              <td width="5%" align="center"><?=date("H:i", strtotime($data_content['EventTime']))?></td>
+              <td width="5%" align="center"><?php echo date("H:i", strtotime($data_content['EventTime']));?></td>
                 <td width="15%" align="center">
                   <span class="NorCtn">
                     <?php
