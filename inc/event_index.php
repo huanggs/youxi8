@@ -51,11 +51,39 @@
                  ?>
               </td>
                <td width="10%" align="center"><span class="NorCtn"><?php echo $data_content['EventPlace'];?></span></td>
-               <td width="5%" align="center"><a href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
-               <td width="5%" align="center"><a href="<?php echo $data_content['link_2'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-               <td width="5%" align="center"><a href="<?php echo $data_content['link_3'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-               <td width="5%" align="center"><a href="<?php echo $data_content['link_4'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
-               <td width="5%" align="center"><a href="<?php echo $data_content['link_5'];?>"><button type="button" class="btn btn-default btn-xs">链接</button></a></td>
+               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
+               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_2'];?>"><?php
+                  if($data_content['link_2'] !== ""){
+                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  }
+                  else {
+                    echo "";
+                  }
+                ?></a></td>
+               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_3'];?>"><?php
+                  if($data_content['link_2'] !== ""){
+                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  }
+                  else {
+                    echo "";
+                  }
+                ?></a></td>
+               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_4'];?>"><?php
+                  if($data_content['link_2'] !== ""){
+                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  }
+                  else {
+                    echo "";
+                  }
+                ?></a></td>
+               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_5'];?>"><?php
+                  if($data_content['link_2'] !== ""){
+                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  }
+                  else {
+                    echo "";
+                  }
+                ?></a></td>
                <td width="10%" align="center">
                 <script type="text/javascript">
                   var __qqClockShare = {
