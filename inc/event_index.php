@@ -1,6 +1,6 @@
             <tr>
-              <td width="5%" align="center"><?php echo date("H:i", strtotime($data_content['EventTime']));?></td>
-                <td width="15%" align="center">
+              <td width="10%" align="center"><?php echo date("H:i", strtotime($data_content['EventTime']));?></td>
+                <td width="20%" align="center">
                   <span class="NorCtn">
                     <?php
                        $catg_id=$data_content['category'];
@@ -11,7 +11,7 @@
                     ?>
                  </span>
                </td>
-               <td width="25%" align="center">
+               <td width="30%" align="center">
                  <?php switch ($data_content['importance']){
                    case 1:
                      echo '<strong>'.$data_content['title'].'</strong>';
@@ -52,43 +52,45 @@
               </td>
                <td width="10%" align="center"><span class="NorCtn"><?php echo $data_content['EventPlace'];?></span></td>
                <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
-               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_2'];?>"><?php
+               <?php
                   if($data_content['link_2'] !== ""){
-                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+					echo "<td width=\"5%\" align=\"center\"><a target=\"_blank\" href=\"";
+					echo $data_content['link_2'];
+                    echo "\"><button type=\"button\" class=\"btn btn-default btn-xs\">链接</button></a></td>";
                   }
                   else {
                     echo "";
                   }
-                ?></a></td>
-               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_3'];?>"><?php
-                  if($data_content['link_2'] !== ""){
-                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  if($data_content['link_3'] !== ""){
+					echo "<td width=\"5%\" align=\"center\"><a target=\"_blank\" href=\"";
+					echo $data_content['link_3'];
+                    echo "\"><button type=\"button\" class=\"btn btn-default btn-xs\">链接</button></a></td>";
                   }
                   else {
                     echo "";
                   }
-                ?></a></td>
-               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_4'];?>"><?php
-                  if($data_content['link_2'] !== ""){
-                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  if($data_content['link_4'] !== ""){
+					echo "<td width=\"5%\" align=\"center\"><a target=\"_blank\" href=\"";
+					echo $data_content['link_4'];
+                    echo "\"><button type=\"button\" class=\"btn btn-default btn-xs\">链接</button></a></td>";
                   }
                   else {
                     echo "";
                   }
-                ?></a></td>
-               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['link_5'];?>"><?php
-                  if($data_content['link_2'] !== ""){
-                    echo "<button type=\"button\" class=\"btn btn-default btn-xs\">链接</button>";
+                  if($data_content['link_5'] !== ""){
+					echo "<td width=\"5%\" align=\"center\"><a target=\"_blank\" href=\"";
+					echo $data_content['link_5'];
+                    echo "\"><button type=\"button\" class=\"btn btn-default btn-xs\">链接</button></a></td>";
                   }
                   else {
                     echo "";
                   }
-                ?></a></td>
-               <td width="10%" align="center">
+                ?>
+               <td width="20%" align="center">
                 <script type="text/javascript">
                   var __qqClockShare = {
                      content: "【游戏吧】提醒您：<?php echo $data_content['title'];?>即将开始。",
-                     time: "<?php echo $data_content['EventDay'];?> <?=date("H:i", strtotime($data_content['EventTime']))?>",
+                     time: "<?php echo $data_content['EventDay'];?> <?php echo date("H:i", strtotime($data_content['EventTime']))?>",
                      advance: 5,
                      url: "<?php echo $data_content['OfficialSite'];?>",
                      icon: "2_1"
