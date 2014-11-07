@@ -41,7 +41,7 @@
       <span class="login">
 	        <span style="color:#fff;"><?php echo $_SESSION['UserName'];?> 欢迎您！</span>
 	     	<a href="../logout.php">退出</a>
-	    	<a href="../index.php">首页</a>
+	    	<a href="../index.php" target="_blank">首页</a>
       </span>
       </div>
     </nav>

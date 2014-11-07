@@ -1,10 +1,11 @@
 * {
 	font-family:'微软雅黑';
+	margin:0;
+	padding:0;
 }
 
 body,html {
 	color: #000;
-  	margin-top:-20px;
 }
 
 .ColorRed {color: #ff0000;}
@@ -57,12 +58,21 @@ body,html {
 }
 
 .btn_center {
-  width:100px;
-  margin-left:auto;
-  margin-right:auto;
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .footer {
-	text-align: center;
-	font-size: 12px;
+    text-align: center;
+    font-size: 12px;
+    background:#CCC;
+    height:120px;
+    padding:35px 0;
+    color:#73787e;
+    border-top:#999 2px solid;
+}
+
+.footer a {
+  color:#383838;
 }
