@@ -23,19 +23,19 @@
               <td align="center">
                  <?php switch ($ArrayEvent['importance']){
                    case 1:
-                     echo '<button type="button" class="btn btn-danger btn-xs">万众瞩目</button>';
+                     echo '<button type="button" class="btn btn-danger btn-xs">★★★★★</button>';
                      break;
                    case 2:
-                     echo '<button type="button" class="btn btn-warning btn-xs">不容错过</button>';
+                     echo '<button type="button" class="btn btn-warning btn-xs">★★★★</button>';
                      break;
                    case 3:
-                     echo '<button type="button" class="btn btn-info btn-xs">建议关注</button>';
+                     echo '<button type="button" class="btn btn-info btn-xs">★★★</button>';
                      break;
                    case 4:
-                     echo '<button type="button" class="btn btn-success btn-xs">值得一看</button>';
+                     echo '<button type="button" class="btn btn-success btn-xs">★★</button>';
                      break;
                    case 5:
-                     echo '<button type="button" class="btn btn-primary btn-xs">不妨一看</button>';
+                     echo '<button type="button" class="btn btn-primary btn-xs">★</button>';
                      break;
                    }
                  ?>
