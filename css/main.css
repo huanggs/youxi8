@@ -19,16 +19,15 @@ body,html {
 .f-size-16 {font-size: 16px;}
 
 .n_top {
-	height: 40px;
-	border-bottom: 1px solid #d2d2d2;
-	background: #f3f3f3;
+	height: 80px;
+	border-bottom: 3px solid #F90;
 	margin-bottom: 20px;
 	-webkit-box-shadow: 1px 1px 1px #e6e6e6; 
 	-moz-box-shadow: 1px 1px 1px #e6e6e6; 
 }
 
 .descaription {
-	vertical-align: bottom;
+	vertical-align: middle;
 	font-size: 14px;
 	color: #818181;
 }
@@ -40,21 +39,19 @@ body,html {
 }
 
 .DayTitle {
-	padding: 5px 10px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#d8d8d8));
+	border-left:5px #F90 solid;
+	margin-bottom:10px;
+	height:22px;
+	padding-left:8px;
 }
 
-.content {
-	border-right: 1px #d8d8d8 solid;
-	border-left: 1px #d8d8d8 solid;
-	border-bottom: 1px #d8d8d8 solid;
+.content tr td{
+	border-top:none!important;
 }
 
 .NorCtn {
 	color: #5c5c5c;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .btn_center {
@@ -66,11 +63,10 @@ body,html {
 .footer {
     text-align: center;
     font-size: 12px;
-    background:#CCC;
     height:120px;
     padding:35px 0;
     color:#73787e;
-    border-top:#999 2px solid;
+    border-top:#F90 3px solid;
 }
 
 .footer a {

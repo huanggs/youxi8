@@ -1,5 +1,5 @@
             <tr>
-              <td width="10%" align="center"><?php echo date("H:i", strtotime($data_content['EventTime']));?></td>
+              <td width="10%" align="left"><?php echo date("H:i", strtotime($data_content['EventTime']));?></td>
                 <td width="20%" align="center">
                   <span class="NorCtn">
                     <?php
@@ -33,25 +33,25 @@
                <td width="10%" align="center">
                  <?php switch ($data_content['importance']){
                    case 1:
-                     echo '<span class="ColorRed f-size-12">★★★★★</span>';
+                     echo '<span class="ColorRed f-size-14">★★★★★</span>';
                      break;
                    case 2:
-                     echo '<span class="ColorOrange f-size-12">★★★★</span>';
+                     echo '<span class="ColorOrange f-size-14">★★★★</span>';
                      break;
                    case 3:
-                     echo '<span class="ColorBlue f-size-12">★★★</span>';
+                     echo '<span class="ColorBlue f-size-14">★★★</span>';
                      break;
                    case 4:
-                     echo '<span class="ColorGreen f-size-12">★★</span>';
+                     echo '<span class="ColorGreen f-size-14">★★</span>';
                      break;
                    case 5:
-                     echo '<span class="ColorGray f-size-12">★</span>';
+                     echo '<span class="ColorGray f-size-14">★</span>';
                      break;
                    }
                  ?>
               </td>
-               <td width="10%" align="center"><span class="NorCtn"><?php echo $data_content['EventPlace'];?></span></td>
-               <td width="5%" align="center"><a target="_blank" href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
+               <td width="20%" align="center"><span class="NorCtn"><?php echo $data_content['EventPlace'];?></span></td>
+               <td width="10%" align="center"><a target="_blank" href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
                <?php
                   if($data_content['link_2'] !== ""){
 					echo "<td width=\"5%\" align=\"center\"><a target=\"_blank\" href=\"";
