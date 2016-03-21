@@ -51,7 +51,7 @@
                  ?>
               </td>
                <td width="20%" align="center"><span class="NorCtn"><?php echo $data_content['EventPlace'];?></span></td>
-               <td width="10%" align="center"><a target="_blank" href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-info btn-xs">官网</button></a></td>
+               <td width="10%" align="center"><a target="_blank" href="<?php echo $data_content['OfficialSite'];?>"><button type="button" class="btn btn-warning btn-xs">官网</button></a></td>
                <?php
                   if($data_content['link_2'] !== ""){
 					echo "<td width=\"5%\" align=\"center\"><a target=\"_blank\" href=\"";
