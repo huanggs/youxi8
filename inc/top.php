@@ -17,7 +17,7 @@
 	        <?php echo $_SESSION['UserName'];?> 欢迎您！
 	        <?php
 				if ($_SESSION['UserGroup'] == "admin"):
-					echo "<a href=\"admin/index.php\">进入后台</a>";
+					echo "<a href=\"admin/index.php\" target=\"_blank\">进入后台</a>";
 	             elseif($_SESSION['UserGroup'] == "user"):
 					echo "";
 	            endif;

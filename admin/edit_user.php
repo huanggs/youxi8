@@ -48,9 +48,9 @@
             <div class="col-md-6 ">
               <select class="form-control" name="UserGroup">
                 <option value="<?php echo $DataUser["UserGroup"];?>">当前用户组：<?php echo $DataUser["UserGroup"];?></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="admin">admin</option>
+                <option value="info">info</option>
+                <option value="user">user</option>
               </select>
             </div>
           </div>

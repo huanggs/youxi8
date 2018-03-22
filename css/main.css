@@ -44,18 +44,18 @@ body,html {
 	height:22px;
 	padding-left:8px;
 	font-weight:bolder;
-    background-color: #FFE1BB;
     line-height: 22px;
-    color: #E06700;
+    color: #585858;
 }
 
 .content tr td{
 	border-top:none!important;
+	border-bottom:1px #D2D2D2 dotted;
 }
 
 .NorCtn {
 	color: #5c5c5c;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .btn_center {
